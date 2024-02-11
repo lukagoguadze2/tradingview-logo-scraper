@@ -11,7 +11,7 @@ with open('input.csv', 'r') as file:
 
     for row in reader:
         try:
-            folder_path = row["Country"]
+            folder_path = row["Foldername"]
             if not os.path.exists(folder_path):
                 os.makedirs(folder_path)
 
